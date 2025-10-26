@@ -935,5 +935,3 @@ st.text("Please take this quick survey to let us know about your experience!")
 st.link_button(label="Feedback",url="https://forms.office.com/Pages/ResponsePage.aspx?id=2RNYUX1x3UWeypqhnAnW-SVikx1a_l9DriBOVBbK_StUNkM3SUZZMlFVVUdJTUlaWTVGR1JKVlZVRS4u")
 
 
-
->>>>>>> 61c03fbd798c26402c45c41dceaba0865911885f
