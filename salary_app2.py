@@ -5,7 +5,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.ticker as mtick
-
+import os
 # Load model + encoders
 BASE_DIR = os.path.dirname(__file__)
 model_path = os.path.join(BASE_DIR, "salary_model_r_match.pkl")
