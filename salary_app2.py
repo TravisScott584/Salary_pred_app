@@ -322,7 +322,7 @@ input_data = input_data[feature_order]
 
 st.title("Your Results")
 
-df = pd.read_csv("c:/Users/Jackf/Analytics/R Files/AI101 Fin Proj/PYTHON/salary_train_data.csv")
+df = pd.read_csv("salary_train_data.csv")
 
 
 # Predict
