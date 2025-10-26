@@ -7,7 +7,10 @@ import numpy as np
 import matplotlib.ticker as mtick
 
 # Load model + encoders
-saved = joblib.load(r"C:\Users\Jackf\Analytics\R Files\AI101 Fin Proj\PYTHON\salary_model_r_match.pkl")
+BASE_DIR = os.path.dirname(__file__)
+model_path = os.path.join(BASE_DIR, "salary_model_r_match.pkl")
+
+saved = joblib.load(model_path)
 model = saved["model"]
 encoders = saved["encoders"]
 feature_order = saved["feature_order"]
