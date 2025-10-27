@@ -7,8 +7,15 @@ import numpy as np
 import matplotlib.ticker as mtick
 import os
 # Load model + encoders
+import gzip
+import pickle
+
 BASE_DIR = os.path.dirname(__file__)
-model_path = os.path.join(BASE_DIR, "salary_model_r_match.pkl")
+model_path = os.path.join(BASE_DIR, "salary_model_r_match.pkl.gz")
+
+with gzip.open(model_path, "rb") as f:
+    model = pickle.load(f)
+
 
 saved = joblib.load(model_path)
 model = saved["model"]
